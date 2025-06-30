@@ -657,27 +657,35 @@
         </section>
 
         <!-- Contact Section -->
-<form action="https://getform.io/f/allzwxza" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="email">
-    <input type="text" name="message">
-    <!-- add hidden Honeypot input to prevent spams -->
-    <input type="hidden" name="_gotcha" style="display:none !important">
-    <!-- checkbox handle -->
-    <input type="checkbox" name="subscribe" value="yes" checked>
-    <input type="hidden" name="subscribe" value="no">
-    <!-- radio button handle -->
-    <input type="radio" name="gender" value="male" checked>
-    <input type="radio" name="gender" value="female">
-    <input type="radio" name="gender" value="other">
-    <!-- select field handle -->
-    <select name="work-experience">
-        <option value="one-year">0-1 years</option>
-        <option value="one-five-years">1-5 years</option>
-    </select>
-    <button type="submit">Send</button>
-</form>
-
+        <section id="contact" class="contact fade-in">
+            <h2>Let's Work Together</h2>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/myzjpgyv" method="POST">
+                
+                <!-- Optional redirect after submission -->
+                <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html">
+                
+                <div class="success-message" id="successMessage">
+                    Thank you! Your message has been sent successfully.
+                </div>
+        
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+        
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
     <!-- Footer -->
     <footer>
         <div class="footer-content">
